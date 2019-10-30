@@ -127,15 +127,11 @@ public class MySingleListImpl implements ILinked {
     @Override
     public int getLength() {
         int count = 0;
-        if (this.head == null) {
-            return count;
-        }else {
-            count++;
             Node node = this.head;
-            while (node.next !=null) {
+            while (node !=null) {
                 count++;
                 node = node.next;
-            }
+
         }
         return count;
     }
