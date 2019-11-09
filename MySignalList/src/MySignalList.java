@@ -1,7 +1,4 @@
-﻿import org.omg.CORBA.NO_IMPLEMENT;
-
-import java.lang.management.PlatformLoggingMXBean;
-
+﻿
 public class MySignalList {
 
     private Node head;
