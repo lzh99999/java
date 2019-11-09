@@ -1,4 +1,4 @@
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
+﻿import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 
 class ListNode {
     public int data;
@@ -146,5 +146,5 @@ public class DoubleList {
             cur = cur.next;
         }
         System.out.println();
-    }
+     }
 }
