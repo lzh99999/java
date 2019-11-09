@@ -9,4 +9,4 @@ public void clear() {
         this.head = null;
         this.last = null;
         }
-        }
+    }
