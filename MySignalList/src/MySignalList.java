@@ -199,7 +199,7 @@ public class MySignalList {
     //输入一个链表，输出该链表中倒数第k个结点
     //1，fast 走k - 1步
     public Node findKthToTail(int k) {
-        if (k < 0) {
+        if (k <= 0) {
             System.out.println("输入不合法！");
         }
         Node fast = this.head;
