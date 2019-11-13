@@ -35,19 +35,19 @@ public class SignalTest {
     }
     //  2. 反转一个单链表。
     public Node reverseList() {
-        Node cur = this.head;
-        Node pre = null;
-        Node newHead = null;
-        while (cur != null) {
-            Node cueNext = cur.next;
-            if (cueNext == null) {
-                newHead = cur;
-            }
-            cur.next = pre;
-            pre = cur;
-            cur = cueNext;
-        }
-        return newHead;
+       Node pre = null;
+       Node cur = this.head;
+       Node newHead = null;
+       while (cur != null) {
+           Node curNext = cur.next;
+           if (curNext == null) {
+               newHead = cur;
+           }
+           cur.next = pre;
+           pre = cur;
+           cur = curNext;
+       }
+       return newHead;
     }
     // 3. 给定一个带有头结点 head 的非空单链表，返回链表的中间结点。如果有两个中间结点，则返回第二个中间结点。
     public Node midNode(Node head) {
