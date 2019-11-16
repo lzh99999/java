@@ -346,26 +346,27 @@ public class MySignalList {
     }
 //将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的
 public Node mergeTowList(Node headA,Node headB) {
-        Node node = new Node(-1);
-        Node tmp = node;
-        while (headA != null && headB != null) {
-            if (headA.date < headB.date) {
-                tmp.next = headA;
-                headA = headA.next;
-                tmp = tmp.next;
-            }else {
-                tmp.next = headB;
-                headB = headB.next;
-                tmp = tmp.next;
-            }
-            if (headA != null) {
-                tmp.next = headA;
-            }
-            if (headB != null) {
-                tmp.next = headB;
-            }
+    Node cur = new Node(-1);
+    Node tmp = cur;
+    while (true) {
+        if (headA.date < headB.date) {
+            tmp.next = headA;
+            tmp = tmp.next;
+            headA = headA.next;
+        } else {
+            tmp.next = headB;
+            tmp = tmp.next;
+            headB = headB.next;
         }
-        return node.next;
+        if (headA == null) {
+            tmp.next = headB;
+            return cur.next;
+        }
+        if (headB == null) {
+            tmp.next = headA;
+            return cur.next;
+        }
+    }
 }
 // 输入两个链表，找出它们的第一个公共结点
 public Node  getIntersectionNode(Node headA,Node headB) {

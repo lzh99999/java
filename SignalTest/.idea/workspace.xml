@@ -15,8 +15,8 @@
       <file leaf-file-name="SignalTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SignalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="272">
+              <caret line="103" column="13" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="103" selection-end-column="13" />
               <folding>
                 <element signature="e#58#59#0" expanded="true" />
                 <element signature="e#90#91#0" expanded="true" />
@@ -71,9 +71,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,11 +167,12 @@
       <workItem from="1572938360710" duration="11710000" />
       <workItem from="1573109729293" duration="177000" />
       <workItem from="1573641406356" duration="746000" />
+      <workItem from="1573866493345" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12633000" />
+    <option name="totallyTimeSpent" value="12657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -213,6 +214,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/SignalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+          <folding>
+            <element signature="e#58#59#0" expanded="true" />
+            <element signature="e#90#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SignalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2756">
@@ -258,8 +277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SignalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="272">
+          <caret line="103" column="13" lean-forward="true" selection-start-line="84" selection-start-column="7" selection-end-line="103" selection-end-column="13" />
           <folding>
             <element signature="e#58#59#0" expanded="true" />
             <element signature="e#90#91#0" expanded="true" />
