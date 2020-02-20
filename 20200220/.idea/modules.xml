@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/backbottle/backbottle.iml" filepath="$PROJECT_DIR$/backbottle/backbottle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basesort/basesort.iml" filepath="$PROJECT_DIR$/basesort/basesort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binaryinsertsort/binaryinsertsort.iml" filepath="$PROJECT_DIR$/binaryinsertsort/binaryinsertsort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bubblesort/bubblesort.iml" filepath="$PROJECT_DIR$/bubblesort/bubblesort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heapsort/heapsort.iml" filepath="$PROJECT_DIR$/heapsort/heapsort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insertsort/insertsort.iml" filepath="$PROJECT_DIR$/insertsort/insertsort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mergesort/mergesort.iml" filepath="$PROJECT_DIR$/mergesort/mergesort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quicksort/quicksort.iml" filepath="$PROJECT_DIR$/quicksort/quicksort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selectsort/selectsort.iml" filepath="$PROJECT_DIR$/selectsort/selectsort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shellsort/shellsort.iml" filepath="$PROJECT_DIR$/shellsort/shellsort.iml" />
+    </modules>
+  </component>
+</project>
