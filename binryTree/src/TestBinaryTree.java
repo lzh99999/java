@@ -1,42 +1,42 @@
-//閾惧紡瀛樺偍浜屽弶鏍�
+//链式存储二叉�?
  class BinaryTree {
-    // 鍒涘缓鏍硅妭鐐�
+    // 创建根节�?
     TreeNode root;
 
-    // 淇敼鏍硅妭鐐�
+    // 修改根节�?
     public void setRoot(TreeNode root) {
         this.root = root;
     }
 
-// 鑾峰緱鏍硅妭鐐�**
+// 获得根节�?**
     public TreeNode getRoot() {
         return root;
     }
 
-// 閬嶅巻浜屽弶鏍戝墠搴忛亶鍘�**
+// 遍历二叉树前序遍�?**
     public void dLR() {
         if (root != null) {
             root.dLR();
         }
     }
 
-    // 閬嶅巻浜屽弶鏍戜腑搴忛亶鍘�
+    // 遍历二叉树中序遍�?
     public void lDR() {
         if (root != null) {
             root.lDR();
         }
     }
-    // 閬嶅巻浜屽弶鏍戝悗搴忛亶鍘�
+    // 遍历二叉树后序遍�?
     public void lRD() {
         if (root != null) {
             root.lRD();
         }
     }
-   // 鍒犻櫎瀛愭爲
+   // 删除子树
     public void deleat(int i) {
         if (root.value == i) {
             root = null;
-            System.out.println("姝ゆ爲涓虹┖");
+            System.out.println("此树为空");
         } else {
 
             root.deleat(i);
@@ -46,26 +46,26 @@
 
 }
 
-// 浜屽弶鏍戣妭鐐�
+// 二叉树节�?
  class TreeNode {
-    // 鑺傜偣鐨勬潈鍊�
+    // 节点的权�?
     int value;
-    //鑺傜偣鐨勫乏鍎垮瓙
+    //节点的左儿子
     TreeNode leftNode;
-    //鑺傜偣鐨勫彸鍎垮瓙
+    //节点的右儿子
     TreeNode rightNode;
     TreeNode(int value){
         this.value=value;
     }
-    //淇敼宸﹀効瀛�
+    //修改左儿�?
     public void setLeftNode(TreeNode leftNode) {
         this.leftNode = leftNode;
     }
-    //淇敼鍙冲効瀛�
+    //修改右儿�?
     public void setRightNode(TreeNode rightNode) {
         this.rightNode = rightNode;
     }
-    // 鍓嶅簭閬嶅巻
+    // 前序遍历
     public void dLR() {
 
         System.out.println(value);
@@ -78,7 +78,7 @@
         }
 
     }
-// 涓簭閬嶅巻**
+// 中序遍历**
     public void lDR() {
 
         if(leftNode!=null) {
@@ -91,7 +91,7 @@
         }
 
     }
-//鍚庡簭閬嶅巻**
+//后序遍历**
     public void lRD() {
         if(leftNode!=null) {
             leftNode.dLR();
@@ -104,24 +104,24 @@
 
 
     }
-//鍓嶅簭鏌ユ壘**
+//前序查找**
     public TreeNode cheakNode(int i) {
         TreeNode temp=null;
         if(this.value==i) {
             return this;
-        }//鏌ユ壘宸﹀効瀛�
+        }//查找左儿�?
         else if(leftNode!=null){
             temp=leftNode.cheakNode(i);
         }
         if(temp!=null) {
             return temp;
-        }//鏌ユ壘鍙冲効瀛�
+        }//查找右儿�?
         else if(rightNode!=null) {
             temp=rightNode.cheakNode(i);
         }
         return temp;
     }
-//鍒犻櫎鑺傜偣**
+//删除节点**
     public void deleat(int i) {
         TreeNode perent=this;
         if(perent.leftNode!=null&&perent.leftNode.value==i) {
@@ -146,17 +146,17 @@
 
 
 }
-//娴嬭瘯绫�
+//测试�?
 public class TestBinaryTree {
 
     public static void main(String[] args) {
-	// 鍒涘缓浜屽弶鏍�**
+	// 创建二叉�?**
         BinaryTree binNode = new BinaryTree();
-	// 鍒涘缓鑺傜偣**
+	// 创建节点**
         TreeNode root = new TreeNode(1);
-   // 鎶婅妭鐐圭粰浜屽弶鏍戠殑鏍硅妭鐐�**
+   // 把节点给二叉树的根节�?**
         binNode.setRoot(root);
-	//鍒涘缓鏍硅妭鐐圭殑宸﹀効瀛愬拰鍙冲効瀛�**
+	//创建根节点的左儿子和右儿�?**
         TreeNode rootL = new TreeNode(2);
         TreeNode rootR = new TreeNode(3);
         root.setLeftNode(rootL);
@@ -165,20 +165,20 @@ public class TestBinaryTree {
         rootL.setRightNode(new TreeNode(5));
         rootR.setLeftNode(new TreeNode(6));
         rootR.setRightNode(new TreeNode(7));
-   //鍓嶅簭閬嶅巻**
+   //前序遍历**
         binNode.dLR();
         System.out.println("===========");
-   //涓簭閬嶅巻**
+   //中序遍历**
         binNode.lDR();
         System.out.println("===========");
-   //鍚庡簭閬嶅巻**
+   //后序遍历**
         binNode.lRD();
         System.out.println("===========");
-   //鍓嶅簭鏌ユ壘**
+   //前序查找**
         TreeNode resurt= root.cheakNode(2);
         System.out.println(resurt);
         System.out.println("===========");
- //鍒犻櫎鑺傜偣**
+ //删除节点**
         binNode.deleat(1);
         binNode.dLR();
     }

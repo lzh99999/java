@@ -1,3 +1,7 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 /**
  * 描述:
  */
@@ -35,8 +39,15 @@ class Node {
         return getKNode(root.left,k-1)+getKNode(root.rigth,k-1);
     }
 }
+
 public class Main {
     public static void main(String[] args) {
-
+        Integer left = 10;
+        Integer right = 20;
+        int[] arr = new int[1];
+        arr[0]++;
+        System.out.println(arr[0]);
+        arr[0]++;
+        System.out.println(arr[0]);
     }
 }

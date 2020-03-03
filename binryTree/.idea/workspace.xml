@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7632cc1-0634-4751-beac-07aed65ec444" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/../test1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../test1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test1/out/production/test1/test/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../test1/out/production/test1/test/test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test1/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test1/src/test/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test4/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test4/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../binarytree/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../binarytree/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../binarytree/test01/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../binarytree/test01/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestBinaryTree.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +51,7 @@
       <file leaf-file-name="TestBinaryTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TestBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2679">
+            <state relative-caret-position="3926">
               <caret line="151" selection-start-line="151" selection-end-line="151" />
             </state>
           </provider>
@@ -98,6 +97,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -109,8 +110,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -118,7 +117,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569936512196" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -158,17 +157,17 @@
       <workItem from="1569936266119" duration="246000" />
       <workItem from="1569991108096" duration="190000" />
       <workItem from="1571203619002" duration="18000" />
+      <workItem from="1585135556068" duration="109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="454000" />
+    <option name="totallyTimeSpent" value="563000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
@@ -180,8 +179,8 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="4" />
-      <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25370803" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25788197" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -189,15 +188,15 @@
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="设计器" order="2" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="调色板" order="5" />
       <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info id="设计器" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="调试" order="11" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="调色板" order="5" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -210,7 +209,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/TestBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2679">
+        <state relative-caret-position="3666">
           <caret line="151" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
@@ -218,6 +217,13 @@
     <entry file="file://$PROJECT_DIR$/src/TestBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2679">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestBinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3926">
           <caret line="151" selection-start-line="151" selection-end-line="151" />
         </state>
       </provider>
