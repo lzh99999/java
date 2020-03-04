@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+<!--form 表单标签 -->
+<!--action 提交到的url  method  提交的方式  常用是 get   post-->
+      <form action="#" method="post" >
+          <!--border 1是有边框 0为无边框-->
+          <table border="1" align="center" width="40%" >
+              <tr>
+                  <td><label for="user">用户名</label></td>
+                  <td><input type="text" name="username" placeholder="请输入用户名" id="user"></td>
+              </tr>
+              <tr>
+                  <td><label for="password">密码</label></td>
+                  <td><input type="password" name="password" placeholder="请输入密码" id="password"></td>
+              </tr>
+              <tr>
+                  <td><label for="email">Email</label></td>
+                  <td><input type="email" name="email" placeholder="请输入邮箱" id="email"></td>
+              </tr>
+              <tr>
+                  <td><label for="name">姓名</label></td>
+                  <td><input type="text" name="use" placeholder="请输入姓名" id="name"></td>
+              </tr>
+              <tr>
+                  <td><label for="tel">手机号</label></td>
+                  <td><input type="text" name="tel" placeholder="请输入手机号" id="tel"></td>
+              </tr>
+              <tr>
+                  <td>性别</td>
+                  <td>
+                      <input type="radio" name="sex"  value="man"> 男
+                      <input type="radio" name="sex" value="woman"> 女
+                  </td>
+              </tr>
+              <tr>
+                  <td>出生日期</td>
+                  <td><input type="date" name="data"  id="data"></td>
+              </tr>
+              <tr>
+                  <td><label for="yanzheng">验证码</label></td>
+                  <td><input type="text"  name="yanzheng"  id="yanzheng">
+                      <img height="20" width="40" src="html风景照片/1.jpg" >
+                  </td>
+              </tr>
+              <tr >
+                  <td colspan="1" align="center" width="100%">
+                      <input type="submit" value="注册">
+                  </td>
+                  <td>
+                      <input type="reset" value="重置">
+                  </td>
+              </tr>
+          </table>
+      </form>
+</body>
+</html>
