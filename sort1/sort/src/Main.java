@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.Scanner;
 import java.util.Stack;
 
 /**
@@ -224,10 +223,64 @@ public class Main {
         }
     }
 
+    private static void mergeData(int[] arr,int left,int mid,int right,int[] tmp) {
+        int index = left;
+        int begin1 = left,end1 = mid,begin2 = mid,end2 = right;
+
+        while (begin1 < end1 && begin2 < end2) {
+            if(arr[begin1] <= arr[begin2]) {
+                tmp[index++] = arr[begin1++];
+            }else {
+                tmp[index++] = arr[begin2++];
+            }
+        }
+        while (begin1 < end1) {
+            tmp[index++] = arr[begin1++];
+        }
+        while (begin2 < end2) {
+            tmp[index++] = arr[begin2++];
+        }
+    }
+
+    private static void mergeSort(int[] arr) {
+        int[] tmp = new int[arr.length];
+        mergeSort(arr,0,arr.length,tmp);
+    }
+
+    //递归实现
+    private static void mergeSort(int[] arr,int left,int right,int[] tmp) {
+        if(right - left > 1) {
+            int mid = left +((right - left) >>1);
+            mergeSort(arr,left,mid,tmp);
+            mergeSort(arr,mid,right,tmp);
+            mergeData(arr,left,mid,right,tmp);
+            System.arraycopy(tmp,left,arr,left,right-left);
+        }
+    }
+
+    //迭代实现
+    private static void mergeSortNor(int[] array) {
+        int[] tmp = new int[array.length];
+        int gop = 1;
+        while (gop < array.length) {
+            for (int left = 0; left < array.length; left += gop *2) {
+                int mid = left + gop;
+                int right = mid + gop;
+                if(mid > array.length) {
+                    mid = array.length;
+                }
+                if(right > array.length) {
+                    right = array.length;
+                }
+                mergeData(array,left,mid,right,tmp);
+            }
+            System.arraycopy(tmp,0,array,0, array.length);
+            gop <<=1;
+        }
+    }
+
     public static void main(String[] args) {
-//        int[] arr = new int[]{5, 3, 2, 6, 4, 8, 7, 9, 0, 1};
-        String a = "";
-//        System.out.println(a + "sad");
+        int[] arr = new int[]{5, 3, 2, 6, 4, 8, 7, 9, 0, 1};
 //        insertSort(arr);
 //        binInsertSort(arr);
 //        shellSort(arr);
@@ -236,44 +289,8 @@ public class Main {
 //        heapSort(arr);
 //        quickSort(arr, 0, arr.length);
 //        quickSort(arr);
-//        System.out.println(Arrays.toString(arr));
-
-
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int key = 40;
-        int sum = 0;
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
-        Arrays.sort(arr);
-        for (int i = 0; i < n; i++) {
-            if(arr[i] == 40) {
-                sum++;
-                continue;
-            }
-            for (int j = i+1; j < n; j++) {
-                int tmp = 40;
-                tmp -= arr[i];
-                if(tmp == 0) {
-                    sum++;
-                    continue;
-                }
-                for (int k = j; k < n; k++) {
-                    if (tmp >= arr[k]) {
-                        tmp -= arr[k];
-                        if (tmp == 0) {
-                            sum++;
-                            break;
-                        }
-                    } else {
-                        break;
-                    }
-                }
-            }
-        }
-        System.out.println(sum);
+        mergeSortNor(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
 
