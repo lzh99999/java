@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/mavendemo" />
     <file type="web" url="file://$PROJECT_DIR$/mavendemo1" />
+    <file type="web" url="file://$PROJECT_DIR$/maventset" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -11,6 +12,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mavendemo/pom.xml" />
+        <option value="$PROJECT_DIR$/maventset/pom.xml" />
       </list>
     </option>
   </component>
