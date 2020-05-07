@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="maventest" />
+        <module name="servlet_blog" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="maventest" target="1.8" />
+      <module name="servlet_blog" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
